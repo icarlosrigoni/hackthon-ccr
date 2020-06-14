@@ -5,6 +5,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 const AppStack = createStackNavigator();
 
 import Home from './pages/Home';
+import DangerPage from './pages/DangerPage';
 
 export default function Routes() {
   return (
@@ -12,6 +13,7 @@ export default function Routes() {
 
       <AppStack.Navigator screenOptions={{ headerShown: false }}>
         <AppStack.Screen name="Home" component={Home} />
+        <AppStack.Screen name="DangerPage" component={DangerPage} />
       </AppStack.Navigator>
 
     </NavigationContainer>
