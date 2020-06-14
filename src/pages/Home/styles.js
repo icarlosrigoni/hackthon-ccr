@@ -31,8 +31,9 @@ export const HomeButton = styled.TouchableOpacity`
 
 export const DangerButton = styled(HomeButton)`
     left: 15%;
+    padding-top: 23%;
+    height: 180px;
     width: 200px;
-    height: 200px;
     top: 15%;
     margin: 10%;
 `

@@ -15,6 +15,11 @@ function Home() {
         navigation.navigate("DangerPage");
     }
 
+    function navigateToHealthPage() {
+        navigation.navigate("HealthPage");
+    }
+
+
     return <>
         <Header />
         <DangerButton backColor='#ff6b6b' onPress={navigateToDangerPage}>
@@ -23,7 +28,7 @@ function Home() {
         </DangerButton>
 
         <Container>
-            <HomeButton backColor='#4ecc80'>
+            <HomeButton backColor='#4ecc80' onPress={navigateToHealthPage}>
                 <Icon name='heart' size={30} color='#323240' />
                 <Text>Saúde</Text>
             </HomeButton>
