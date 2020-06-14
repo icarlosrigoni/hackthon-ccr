@@ -7,6 +7,8 @@ const AppStack = createStackNavigator();
 import Home from './pages/Home';
 import DangerPage from './pages/DangerPage';
 import HealthPage from './pages/HealthPage';
+import Points from './pages/Pointslist'
+
 
 export default function Routes() {
   return (
@@ -16,6 +18,7 @@ export default function Routes() {
         <AppStack.Screen name="Home" component={Home} />
         <AppStack.Screen name="DangerPage" component={DangerPage} />
         <AppStack.Screen name="HealthPage" component={HealthPage} />
+        <AppStack.Screen name="Points" component={Points} />
       </AppStack.Navigator>
 
     </NavigationContainer>

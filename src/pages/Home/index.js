@@ -19,6 +19,12 @@ function Home() {
         navigation.navigate("HealthPage");
     }
 
+    function navigateToPoints() {
+        navigation.navigate("Points");
+    }
+
+    
+
 
     return <>
         <Header />
@@ -33,7 +39,7 @@ function Home() {
                 <Text>Saúde</Text>
             </HomeButton>
 
-            <HomeButton backColor='#7ccfff'>
+            <HomeButton backColor='#7ccfff' onPress={navigateToPoints}>
                 <Icon name='search' size={30} color='#323240' />
                 <Text>Pesquisa</Text>
             </HomeButton>
